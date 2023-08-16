@@ -1,0 +1,16 @@
+name: Custom Action
+on: [push]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello
+      run: echo "Hello"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Files 1 and 2
+      run: |
+        cat 1
+        cat 2
