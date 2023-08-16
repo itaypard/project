@@ -10,7 +10,7 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Files 1 and 2
+    - name: Print Files 1.sh
       run: |
         ls
         echo "Current directory: $PWD"
