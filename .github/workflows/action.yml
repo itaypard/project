@@ -13,6 +13,7 @@ jobs:
     - name: Print Files 1.sh
       run: |
         ls
+        echo "$ls"
         echo "Current directory: $PWD"
         cat 1
         cat 2
