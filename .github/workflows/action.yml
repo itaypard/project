@@ -12,5 +12,7 @@ jobs:
     steps:
     - name: Print Files 1 and 2
       run: |
+        ls
+        echo "Current directory: $PWD"
         cat 1
         cat 2
