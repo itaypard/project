@@ -8,11 +8,13 @@ jobs:
       run: echo "Hello"
 
   job2:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Print Files 1 and 2
-      run: |
-        ls
-        echo "Current directory: $PWD"
-        cat 1
-        cat 2
+  runs-on: ubuntu-latest
+  steps:
+  - name: Print Files 1 and 2
+    run: ls
+  - name: Print Current Directory
+    run: echo "Current directory: $PWD"
+  - name: Print File 1 Contents
+    run: cat 1
+  - name: Print File 2 Contents
+    run: cat 2
